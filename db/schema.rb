@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 20150827003019) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "catagories", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "name"
   end
 
-  create_table "catagories_recipes", force: :cascade do |t|
+  create_table "categories_recipes", force: :cascade do |t|
     t.integer "recipe_id"
-    t.integer "catagory_id"
+    t.integer "category_id"
   end
 
   create_table "ingredients", force: :cascade do |t|

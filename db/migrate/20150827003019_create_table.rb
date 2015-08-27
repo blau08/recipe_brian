@@ -6,13 +6,13 @@ class CreateTable < ActiveRecord::Migration
       t.column(:rating, :integer)
     end
 
-    create_table(:catagories) do |t|
+    create_table(:categories) do |t|
       t.column(:name, :string)
     end
 
-    create_table(:catagories_recipes) do |t|
+    create_table(:categories_recipes) do |t|
       t.column(:recipe_id, :int)
-      t.column(:catagory_id, :int)
+      t.column(:category_id, :int)
     end
 
     create_table(:ingredients) do |t|
